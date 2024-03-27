@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --happye-green: #00EB80;
+    --dark-green: #00A359;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(../img/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 20px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    color: white;
+    text-align: center;
+    width: 700px;
+}
+
+.header-content h1 {
+    font-size: 56px;
+}
+
+.header-content p {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    font-size: 23px;
+}
+
+.header-btn {
+    color: var(--happye-green);
+    background-color: var(--black);
+    border: none;
+    padding: 20px 40px;
+    font-size: 18px;
+}
+
+/* Estilos nav */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    margin: 20px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 23px;
+}
+
+.nav-links a {
+    color: white;
+}
+
+/*Servicios */
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    padding: 40px 0px;
+    margin: 20px;
+}
+
+.servicios-titulo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.servicios-titulo h2 {
+    color: var(--happye-green);
+    font-size: 36px;
+}
+
+.servicios-titulo p {
+    font-size: 18px;
+}
+
+.servicios-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;
+}
+
+.servicios-cards-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 400px;
+    min-height: 300px;
+    box-shadow: 0px 5px 5px 1px #afafaf;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 400px;
+    min-height: 300px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.btn-card {
+    border: 1px var(--dark-green) solid;
+    background-color: transparent;
+    padding: 24px 36px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+
+/*Portafolio */
+
+.portafolio {
+    margin: 20px;
+    padding: 20px;
+}
+
+.portafolio-titulo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+.portafolio-titulo h2 {
+    color: var(--happye-green);
+    font-size: 36px;
+}
+
+.portafolio-titulo p {
+    font-size: 18px;
+}
+
+.portafolio-content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.text-1{
+    position: absolute;
+    top: 80%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.text-1-p{
+    position: absolute;
+    top: 90%;
+    right: 65%;
+    transform: translate(-50%, -50%);
+    color: var(--dark-green);
+    font-weight: 400;
+}
+
+.text-2{
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.text-2-p{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: var(--dark-green);
+    font-weight: 400;
+}
+
+.text-3{
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.text-3-p{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: var(--dark-green);
+    font-weight: 400;
+}
+
+/* Nosotros */
+
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0px;
+    margin: 20px;
+}
+
+.nosotros-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 1280px;
+}
+
+.nosotros-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
+    padding: 20px 24px;
+    box-shadow: 0px 5px 5px 1px #afafaf;
+}
+
+.nosotros-text p {
+    font-size: 16px;
+}
+
+.nosotros-text h2 {
+    font-size: 40px;
+    color: var(--dark-green);
+}
+
+/* Contacto */
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0px;
+    margin: 20px;
+}
+
+.contact-content {
+    background-color: var(--black);
+    width: 1240px;
+    height: 720px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.contact-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.contact-datos svg {
+    color: var(--happye-green);
+}
+
+.form {
+    background-color: var(--dark-green);
+    padding: 40px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.form-boxs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-boxs input[type=text] {
+    padding: 20px;
+}
+
+
+.form.boxs h4 {
+    color: black;
+    font-size: 19px;
+}
+
+.btn-form{
+    color: white;
+    background-color: var(--black);
+    border: none;
+    padding: 20px 30px;
+    font-size: 19px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    width: 200px;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    height: 200px;
+    color: white;
+    text-align: center;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+footer svg{
+    color: var(--dark-green);
+}
+
+footer hr{
+    height: 10px;
+    width: 1220px;
+    background-color: var(--happye-green);
+    margin-left: 200px;
+}
+
+/* Responsive */
