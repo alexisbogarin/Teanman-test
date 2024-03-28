@@ -74,6 +74,11 @@ p {
     font-size: 23px;
 }
 
+.header img{
+    width: 200px;
+    height: 81px;
+}
+
 .header-btn {
     color: var(--happye-green);
     background-color: var(--black);
@@ -416,9 +421,117 @@ footer svg{
 
 footer hr{
     height: 10px;
-    width: 1220px;
+    width: 100%;
     background-color: var(--happye-green);
-    margin-left: 200px;
 }
 
-/* Responsive */
+@media (min-width: 360px) and (max-width: 768px){
+
+    .header-content{
+        width: 100%;
+    }
+
+    .nav{
+        padding: 10px 0px 0px 0px;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-links{
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .servicios-cards{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card-content{
+        width: 100%;
+    }
+
+    .servicios-cards-box{
+        width: 100%;
+    }
+
+    .portafolio-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+   .portafolio-content img{
+    width: 100%;
+   }
+
+    .text-1{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .text-1-p, .text-2-p, .text-3-p{
+        display: none;
+    }
+    
+    .text-2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+    
+    
+    .text-3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+
+    .nosotros-content{
+        flex-direction: column;
+    }
+
+    .nosotros-content img{
+        width: 100%;
+    }
+
+    .nosotros-text h2{
+        font-size: 30px;
+    }
+
+    .contact-content{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-inputs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-form{
+        width: 100%;
+    }
+
+    footer hr{
+        margin-left: 0;
+        width: 100%;
+    } 
+}
+
